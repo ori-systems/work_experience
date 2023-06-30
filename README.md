@@ -1,4 +1,6 @@
 # work_experience
 ROS Lab - Work Experience 2023
 
-https://docs.google.com/document/d/1qU5bgGUD4-zo-lIDB-KJw13hUTNFCUm33Z5SiqIA8CI/edit
+Contributors:  [David Marquez-Gamez](https://github.com/damarquezg), [Pratik Somaiya](https://github.com/imprs), and [Tobit Flatscher](https://github.com/2b-t).
+
+Wiki: https://github.com/ori-systems/work_experience/wiki
