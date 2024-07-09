@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  work_experience:
+    extends:
+      file: docker-compose-gui.yml
+      service: work_experience
+    environment:
+     - NVIDIA_VISIBLE_DEVICES=all
+     - NVIDIA_DRIVER_CAPABILITIES=all
+    runtime: nvidia

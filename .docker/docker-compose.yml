@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  work_experience:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+      target: dev
+      args:
+        - CATKIN_WORKSPACE_DIR=${CATKIN_WORKSPACE_DIR}
+        - USERNAME=${USERNAME:-developer}
+        - UID=${UID:-1000}
+        - GID=${GID:-1000}
+    container_name: work_experience
+    environment:
+      - TURTLEBOT3_MODEL=burger
+    network_mode: "host"
+    privileged: true
+    tty: true
+    volumes:
+      - ../jackal_tools:${CATKIN_WORKSPACE_DIR}/src/work_experience/jackal_tools
+      - ../robot_control:${CATKIN_WORKSPACE_DIR}/src/work_experience/robot_control
+      - /dev:/dev

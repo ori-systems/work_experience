@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  work_experience:
+    extends:
+      file: docker-compose.yml
+      service: work_experience
+    environment:
+     - DISPLAY=${DISPLAY}
+     - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw

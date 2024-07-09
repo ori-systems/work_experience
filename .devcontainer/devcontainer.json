@@ -1,0 +1,11 @@
+{
+  "name": "ROS work experience Docker",
+  "dockerComposeFile": [
+    "../.docker/docker-compose-gui.yml"
+  ],
+  "service": "work_experience",
+  "workspaceFolder": "/work_experience_ws",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+  ]
+}
